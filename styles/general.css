@@ -1,0 +1,13 @@
+body{
+    font-family: Roboto, Arial;
+    color: rgb(33,33,33);
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    font-family: Roboto, Arial;
+}
