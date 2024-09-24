@@ -22,6 +22,14 @@ const products = [{
         count: 56
     },
     price: 40099
+},{
+    image:'images/products/black-2-slot-toaster.jpg',
+    name:'2 Slot Toaster - Black',
+    rating:{
+        stars:5,
+        count:2197
+    },
+    price:1899
 }
 
 ];
