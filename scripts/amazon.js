@@ -79,7 +79,18 @@ products.forEach((product) => {
                 quantity:1
             });
         }
+
+
+        // Calculate the total quantity
+        let cartQunatity=0;
+        cart.forEach((item)=>{  
+            cartQunatity += item.quantity;
+        });
+
+        //Get cart Qunatity element into JS using DOM
+
+        document.querySelector('.js-cart-quantity').innerHTML=cartQunatity;
+
         
-        console.log(cart);
-    })
+    });
  });
