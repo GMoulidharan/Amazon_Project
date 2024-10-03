@@ -118,8 +118,7 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
     const productId = link.dataset.productId;
     removeFromCart(productId);
 
-    const container = document.querySelector(`.js-cart-item-container-${productId}`);
-    container.remove();
+    renderOrderSummary();//regenerate HTML for order summary instead using DOM and updating directly.
 
     updateCartQunatity();
     renderPaymentSummary();//update the data and regenerate all the HTML
