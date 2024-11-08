@@ -1,6 +1,6 @@
 import { renderOrderSummary } from "../../scripts/checkout/orderSummary.js";
 import {loadFromStorage, cart} from '../../data/cart.js';
-import { loadProducts } from "../../data/products.js";
+import { loadProducts, loadProductsFetch } from "../../data/products.js";
 
 describe('test suite: renderOrderSummary',() =>{
 
@@ -8,10 +8,9 @@ describe('test suite: renderOrderSummary',() =>{
     const productId2= '15b6fc6f-327a-4ec4-896f-486349e85a3d';
 
     beforeAll((done) =>{//It will not automatically goes to the next step.It will wait, it will only goes to the nest function only we call the done.
-      loadProducts(() =>{
-        done();//let us control when to go to the next step
+      loadProductsFetch().then(() =>{
+        done();
       });
-
     });
 
     beforeEach(() =>{
