@@ -14,10 +14,10 @@ async function loadpage(){
 
         const value = await new Promise((resolve,reject) =>{
         //throw 'error1';
-        loadCart(() =>{
-            //reject('error3');
-            resolve('value3');
-        });
+            loadCart(() =>{
+                //reject('error3');
+                resolve('value3');
+            });
     });
 
     } catch(error){
